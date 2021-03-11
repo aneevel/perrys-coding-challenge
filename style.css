@@ -1,9 +1,57 @@
 /**
 * Colors
 * --- 
-* White: #E5E5E5
 * Grey: #F9FAFD
 * Orange : #FD815A
 * Light-Blue: #E6ECFF
 * Blue: #4965CB
 * Image-Blue: #5A7EFD
+*/
+
+/**
+* "Default" fallback rules
+*/
+
+body {
+    background-color: #FFFFFF;
+    font-size: 15px;
+    color: #535C68;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+}
+
+/**
+* Header section rules
+*/
+
+nav {
+    position: absolute; 
+    width: 1223px;
+    height: 32px;
+    margin-top: 27px;
+    margin-left: 89px;
+}
+
+#nav-list {
+    display: flex;
+    list-style: none;
+}
+
+#nav-list li {
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+/**
+* Image rules
+*/
+
+/**
+* Features section rules
+*/
+
+/**
+* Features grid rules
+*/
