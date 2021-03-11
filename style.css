@@ -25,12 +25,22 @@ body {
 * Header section rules
 */
 
+#page-header {
+    position: absolute;
+    width: 100%;
+    height: 47%;
+    left: 0px;
+    top: 0px;
+    background-color: #F9FAFD;
+    mix-blend-mode: normal;
+}
+
 nav {
     position: absolute; 
     width: 1223px;
     height: 32px;
-    margin-top: 27px;
-    margin-left: 89px;
+    top: 27px;
+    left: 89px;
 }
 
 #nav-list {
