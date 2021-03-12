@@ -12,6 +12,10 @@
 * "Default" fallback rules
 */
 
+* {
+    box-sizing: border-box;
+}
+
 body {
     background-color: #FFFFFF;
     font-size: 15px;
@@ -19,28 +23,22 @@ body {
     font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 500;
+    padding: 0px;
+    margin: 0px;
 }
 
 /**
 * Header section rules
 */
-
 #page-header {
-    position: absolute;
+    display: flex;
     width: 100%;
-    height: 47%;
-    left: 0px;
-    top: 0px;
     background-color: #F9FAFD;
     mix-blend-mode: normal;
 }
 
 nav {
-    position: absolute; 
     width: 1223px;
-    height: 32px;
-    top: 27px;
-    left: 89px;
 }
 
 #nav-list {
@@ -49,15 +47,35 @@ nav {
 }
 
 #nav-list li {
-    display: flex;
-    align-items: center;
-    text-align: center;
+    margin: auto
 }
 
+#product {
+    
+}
+
+#features {
+    
+}
+
+#enterprise {
+}
+
+#company {
+}
+
+#sign-in {
+}
+
+#download {
+}
 /**
 * Image rules
 */
 
+#header-image {
+    max-width: 620px;
+}
 /**
 * Features section rules
 */
