@@ -32,13 +32,17 @@ body {
 */
 #page-header {
     display: flex;
+    flex-direction: column;
     width: 100%;
+    height: auto;
     background-color: #F9FAFD;
     mix-blend-mode: normal;
 }
 
 nav {
-    width: 1223px;
+    width: 80%;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 #nav-list {
@@ -47,6 +51,8 @@ nav {
 }
 
 #nav-list li {
+    position: absolute;
+    z-index: 1000;
     margin: auto
 }
 
@@ -69,13 +75,22 @@ nav {
 
 #download {
 }
+
+#header-content {
+    display: grid;
+    grid-template-columns: 7fr 5fr;
+}
+
+#header-content 
 /**
 * Image rules
 */
 
 #header-image {
-    max-width: 620px;
+    max-width: 100%;
+    height: auto;
 }
+
 /**
 * Features section rules
 */
