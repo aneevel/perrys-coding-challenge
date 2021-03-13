@@ -70,6 +70,7 @@ nav {
     grid-template-columns: repeat(14, minmax(0, 1fr));
     grid-template-rows: 80px;
     align-items: center;
+    justify-items: center;
     list-style: none;
 }
 
@@ -91,7 +92,8 @@ nav {
 
 #company-logo {
     width: 100%;
-    margin-top: 15px;
+    margin-top: 60%;
+    margin-left: 25%;
 }
 
 #product {
