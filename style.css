@@ -35,12 +35,21 @@ h1 {
     font-size: 4.3rem;
 }
 
+a:link, a:visited {
+    text-decoration: none;
+    color: #7B8798;    
+}
+
+.user-link {
+    color: #FFFFFF;
+}
+
 /**
 * Header section rules
 */
 #page-header {
-    width: 100%;
-    height: 634px;
+    width: 100vw;
+    height: 35%;
     background-color: #F9FAFD;
     mix-blend-mode: normal;
 }
@@ -64,10 +73,6 @@ nav {
     list-style: none;
 }
 
-.nav-link {
-    color: #7B8798;
-}
-
 #logo {
     grid-area: logo;
     grid-row: 1;
@@ -77,6 +82,11 @@ nav {
 #logo-triangle {
     fill: #FD815A;
     stroke: #FD815A;
+}
+
+#logo-circle {
+    fill: #F9FAFD;
+    stroke: #F9FAFD;
 }
 
 #company-logo {
@@ -141,7 +151,7 @@ nav {
 #header-image {
     max-width: 100%;
     height: auto;
-    clip-path: 
+    object-fit: fill;
 }
 
 /**
