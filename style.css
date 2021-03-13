@@ -79,7 +79,7 @@ nav {
     grid-column: 2;
 }
 
-#logo-triangle {
+.logo-triangle {
     fill: #FD815A;
     stroke: #FD815A;
 }
