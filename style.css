@@ -18,7 +18,7 @@
 
 body {
     background-color: #FFFFFF;
-    font-size: 15px;
+    font-size: 1vw;
     color: #535C68;
     font-family: 'Inter', sans-serif;
     font-style: normal;
@@ -28,60 +28,112 @@ body {
 }
 
 /**
+* Font rules
+*/
+
+h1 {
+    font-size: 4.3rem;
+}
+
+/**
 * Header section rules
 */
 #page-header {
-    display: flex;
-    flex-direction: column;
     width: 100%;
-    height: auto;
+    height: 634px;
     background-color: #F9FAFD;
     mix-blend-mode: normal;
 }
 
 nav {
-    width: 80%;
-    margin-left: 5%;
-    margin-right: 5%;
+    position: absolute;
+    z-index: 1000;
+    width: 100%;
 }
 
 #nav-list {
-    display: flex;
+    display: grid;
+    padding-left: 0vw;
+    margin-right: 5vw;
+    grid-template: 
+        'logo product features enterprise company sign-up download';
+    grid-column-gap: 2vw;
+    grid-template-columns: repeat(14, minmax(0, 1fr));
+    grid-template-rows: 80px;
+    align-items: center;
     list-style: none;
 }
 
-#nav-list li {
-    position: absolute;
-    z-index: 1000;
-    margin: auto
+.nav-link {
+    color: #7B8798;
+}
+
+#logo {
+    grid-area: logo;
+    grid-row: 1;
+    grid-column: 2;
+}
+
+#logo-triangle {
+    fill: #FD815A;
+    stroke: #FD815A;
+}
+
+#company-logo {
+    width: 100%;
+    margin-top: 15px;
 }
 
 #product {
-    
+    grid-area: product;
+    grid-row: 1;
+    grid-column: 3;
 }
 
 #features {
-    
+    grid-area: features;
+    grid-row: 1;
+    grid-column: 4;
 }
 
 #enterprise {
+    grid-area: enterprise;
+    grid-row: 1;
+    grid-column: 5;
 }
 
 #company {
+    grid-area: company;
+    grid-row: 1;
+    grid-column: 6;
 }
 
 #sign-in {
+    font-weight: 600;
+    grid-area: sign-in;
+    grid-row: 1;
+    grid-column: 13;
+    color: #FFFFFF;
 }
 
 #download {
+    font-weight: 600;
+    grid-area: download;
+    grid-row: 1;
+    grid-column: 14;
+    color: #FFFFFF;
 }
 
 #header-content {
     display: grid;
-    grid-template-columns: 7fr 5fr;
+    align-items: center;
+    grid-template-columns: 55% 45%;
 }
 
-#header-content 
+#mission-statement {
+    padding-left: 10%;
+}
+
 /**
 * Image rules
 */
@@ -89,6 +141,7 @@ nav {
 #header-image {
     max-width: 100%;
     height: auto;
+    clip-path: 
 }
 
 /**
