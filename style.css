@@ -155,7 +155,7 @@ h1 {
 button {
     border: none;
     border-radius: 8px;
-    height: 35px;
+    height: 45px;
     margin-left: 15px;
     margin-right: 15px;
 }
@@ -163,8 +163,8 @@ button {
 #download-button {
     background: #E6ECFF;
     color: #4965CB;
-    width: 75px;
-    height: 35px;
+    width: 100px;
+    height: 45px;
 }
 
 .orange-background {
@@ -174,6 +174,10 @@ button {
 
 .orange-text {
     color: #FD815A;
+}
+
+.uppercase-text {
+    text-transform: uppercase;
 }
 
 #features-container {
@@ -190,6 +194,7 @@ button {
 
 #features-header > h2 {
     font-size: 1.5em;
+    color: #7B8798;
     text-align: center;
     padding: 10px;
 }
@@ -197,6 +202,7 @@ button {
 #features-header > h3 {
     font-size: 2.5em;
     color: #2B2F35;
+    letter-spacing: 10%;
     text-align: center;
     padding-top: 15px;
     padding-bottom: 15px;
@@ -206,7 +212,27 @@ button {
 }
 
 #features-header > h4 {
+    color: #535C68;
+    text-align: center;
+}
 
+.feature {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.feature > h5 {
+    font-weight: 600;
+    text-align: center;
+    color: #2B2F35;
+    padding: 15px;
+}
+
+.feature > p {
+    color: #535C68;
+    padding: 10px;
+    text-align: center;
 }
 /**
 * 768px width sizing
