@@ -18,7 +18,7 @@
 
 body {
     background-color: #FFFFFF;
-    font-size: 1vw;
+    font-size: 15px;
     color: #535C68;
     font-family: 'Inter', sans-serif;
     font-style: normal;
@@ -36,7 +36,7 @@ a:link, a:visited {
     color: #7B8798;    
 }
 
-.user-link {
+#download-link, #sign-in-link {
     color: #FFFFFF;
 }
 
@@ -45,7 +45,7 @@ a:link, a:visited {
 */
 #page-header {
     width: 100vw;
-    height: 35%;
+    height: 50vh;
     background-color: #F9FAFD;
     mix-blend-mode: normal;
 }
@@ -59,7 +59,7 @@ nav {
 #nav-list {
     display: grid;
     padding-left: 0vw;
-    margin-right: 5vw;
+    margin-right: 7vw;
     grid-template: 
         'logo product features enterprise company sign-up download';
     grid-column-gap: 2vw;
@@ -136,6 +136,7 @@ nav {
     display: grid;
     align-items: center;
     grid-template-columns: 55% 45%;
+    grid-template-rows: 50vh;
 }
 
 #mission-statement {
@@ -152,10 +153,18 @@ nav {
 * Image rules
 */
 
+#image-container {
+    height: 100%;
+    width: 100%;
+}
+
 #header-image {
-    max-width: 100%;
-    height: auto;
-    clip-path: inset(170px 100px 465px 105px);
+    height: 100%;
+    width: 100%;
+    background-image: url("images/header-image.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 /**
