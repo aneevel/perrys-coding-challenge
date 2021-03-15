@@ -33,8 +33,8 @@ body {
     align-items: center;
     width: 100%;
     height: 75px;
-    padding-right: 10px;
-    padding-left: 10px;
+    padding-right: 25px;
+    padding-left: 25px;
     margin-right: auto;
     margin-left: auto;
     overflow: hidden;
@@ -52,6 +52,14 @@ body {
     left: 0px;
     z-index: 10;
     display: none;
+}
+
+.mission-header {
+    margin: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 30px;
+    text-align: center;
 }
 
 .nav-item {
@@ -137,10 +145,13 @@ button {
     height: 25px;
 }
 
-.orange {
+.orange-background {
     background-color: #FD815A;
 }
 
+.orange-text {
+    color: #FD815A;
+}
 /**
 * 768px width sizing
 *
