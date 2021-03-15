@@ -1,12 +1,4 @@
-/**
-* Colors
-* --- 
-* Grey: #F9FAFD
-* Orange : #FD815A
-* Light-Blue: #E6ECFF
-* Blue: #4965CB
-* Image-Blue: #5A7EFD
-*/
+
 
 /**
 * "Default" fallback rules
@@ -23,57 +15,58 @@ body {
     font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 500;
-    padding: 0px;
-    margin: 0px;
 }
 
 /**
-* Font rules
+* Mobile/Small device and default rules
 */
 
-a:link, a:visited {
-    text-decoration: none;
-    color: #7B8798;    
-}
-
-#download-link, #sign-in-link {
-    color: #FFFFFF;
-}
-
-/**
-* Header section rules
-*/
 #page-header {
-    width: 100vw;
-    height: 50vh;
+    position: sticky;
     background-color: #F9FAFD;
-    mix-blend-mode: normal;
+    margin-bottom: 0px;
 }
 
-nav {
-    position: absolute;
-    z-index: 1000;
-    width: 100%;
-}
-
-#nav-list {
-    display: grid;
-    padding-left: 0vw;
-    margin-right: 7vw;
-    grid-template: 
-        'logo product features enterprise company sign-up download';
-    grid-column-gap: 2vw;
-    grid-template-columns: repeat(14, minmax(0, 1fr));
-    grid-template-rows: 80px;
+#primary-nav-container {
+    display: flex;
+    justify-content: space-between;
     align-items: center;
-    justify-items: center;
-    list-style: none;
+    width: 100%;
+    height: 75px;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-right: auto;
+    margin-left: auto;
+    overflow: hidden;
 }
 
-#logo {
-    grid-area: logo;
-    grid-row: 1;
-    grid-column: 2;
+#primary-navigation {
+    flex-direction: column;
+    overflow: hidden;
+    opacity: 0%;
+}
+
+#get-started-now-button {
+    margin-top: -10px;
+}
+
+#hamburger-menu {
+    margin-top: -10px;
+    margin-right: -35px;
+    background-color: inherit;
+}
+
+#company-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+#company-logo-svg {
+    display: inline-block;
+    width: 45px;
+    height: 50px;
 }
 
 .logo-triangle {
@@ -86,90 +79,64 @@ nav {
     stroke: #F9FAFD;
 }
 
-#company-logo {
-    width: 100%;
-    margin-top: 60%;
-    margin-left: 25%;
+a:link, a:visited {
+    text-decoration: none;
+    color: #7B8798;    
 }
 
-#product {
-    grid-area: product;
-    grid-row: 1;
-    grid-column: 3;
-}
-
-#features {
-    grid-area: features;
-    grid-row: 1;
-    grid-column: 4;
-}
-
-#enterprise {
-    grid-area: enterprise;
-    grid-row: 1;
-    grid-column: 5;
-}
-
-#company {
-    grid-area: company;
-    grid-row: 1;
-    grid-column: 6;
+#download-link, #sign-in-link {
+    color: #FFFFFF;
 }
 
 #sign-in {
     font-weight: 600;
-    grid-area: sign-in;
-    grid-row: 1;
-    grid-column: 13;
     color: #FFFFFF;
 }
 
 #download {
     font-weight: 600;
-    grid-area: download;
-    grid-row: 1;
-    grid-column: 14;
     color: #FFFFFF;
 }
 
-#header-content {
-    display: grid;
-    align-items: center;
-    grid-template-columns: 55% 45%;
-    grid-template-rows: 50vh;
-}
-
-#mission-statement {
-    padding-left: 10%;
-}
-
-.mission-header {
-    padding: 0px;
+#mission-content-container {
     margin: 0px;
-    font-size: 4rem;
+    padding: 0px;
+    background-color: #F9FAFD;
+}
+
+button {
+    border: none;
+    border-radius: 8px;
+    height: 25px;
+}
+
+.orange {
+    background-color: #FD815A;
 }
 
 /**
-* Image rules
-*/
+* 768px width sizing
+*
 
-#image-container {
-    height: 100%;
-    width: 100%;
-}
+@media screen and (min-width: 768px) {
 
-#header-image {
-    height: 100%;
-    width: 100%;
-    background-image: url("images/header-image.png");
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 /**
-* Features section rules
-*/
+* 1024px width sizing
+*
+
+@media screen and (min-width: 1024px) {
+
+}
+
 
 /**
-* Features grid rules
+* 1216px width sizing
+*
+
+@media screen and (min-width: 1216px) {
+
+
+}
 */
