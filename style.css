@@ -135,22 +135,78 @@ a:link, a:visited {
     padding: 25px;
 }
 
+#mission-text {
+    font-size: 2em;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+
 h1 {
     font-size: 4.5em;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
 }
 
 button {
     border: none;
     border-radius: 8px;
-    height: 25px;
+    height: 35px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+#download-button {
+    background: #E6ECFF;
+    color: #4965CB;
+    width: 75px;
+    height: 35px;
 }
 
 .orange-background {
     background-color: #FD815A;
+    color: #FFFFFF;
 }
 
 .orange-text {
     color: #FD815A;
+}
+
+#features-container {
+    display: flex;
+    background: #FFFFFF;
+    flex-direction: column;
+    width: 100%;
+    padding: 25px;
+}
+
+#features-header {
+    padding: 25px;
+}
+
+#features-header > h2 {
+    font-size: 1.5em;
+    text-align: center;
+    padding: 10px;
+}
+
+#features-header > h3 {
+    font-size: 2.5em;
+    color: #2B2F35;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 5px;
+    padding-right: 5px;
+
+}
+
+#features-header > h4 {
+
 }
 /**
 * 768px width sizing
