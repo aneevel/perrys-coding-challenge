@@ -101,9 +101,20 @@ body {
     height: 50px;
 }
 
-.logo-triangle {
+.orange-fill {
     fill: #FD815A;
+}
+
+.orange-outline {
     stroke: #FD815A;
+}
+
+.white-outline {
+    stroke: #FFFFFF;
+}
+
+.thick-outline {
+    stroke-width: 2px;
 }
 
 #logo-circle {
@@ -219,6 +230,7 @@ button {
 .feature {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     width: 100%;
 }
 
@@ -234,6 +246,14 @@ button {
     padding: 10px;
     text-align: center;
 }
+
+.feature-svg {
+    display: inline-block;
+    padding: 0px;
+    height: 50px;
+    margin: auto;
+}
+
 /**
 * 768px width sizing
 *
