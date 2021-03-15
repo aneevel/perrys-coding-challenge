@@ -105,6 +105,10 @@ body {
     fill: #FD815A;
 }
 
+.white-fill {
+    fill: #FFFFFF;
+}
+
 .orange-outline {
     stroke: #FD815A;
 }
@@ -114,7 +118,20 @@ body {
 }
 
 .thick-outline {
-    stroke-width: 2px;
+    stroke-width: 3px;
+}
+
+.very-thick-outline {
+    stroke-width: 5px;
+}
+
+.transparent-outline {
+    fill: transparent;
+    stroke: transparent;
+}
+
+.rounded-cap {
+    stroke-linecap: round;
 }
 
 #logo-circle {
