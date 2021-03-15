@@ -9,7 +9,7 @@
 }
 
 body {
-    background-color: #FFFFFF;
+    background-color: #F9FAFD;
     font-size: 15px;
     color: #535C68;
     font-family: 'Inter', sans-serif;
@@ -41,8 +41,31 @@ body {
 }
 
 #primary-navigation {
+    display: flex;
     flex-direction: column;
+    position: fixed;
+    justify-content: center;
+    padding-top: 0px;
+    background: white;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: 10;
     display: none;
+}
+
+.nav-item {
+    display: list-item;
+}
+
+.nav-item a {
+    display: block;
+    padding: 20px;
+}
+
+.nav-item a:hover {
+    background-color:#FD815A;
+    color: #FFFFFF;
 }
 
 #get-started-now-button {
@@ -53,6 +76,7 @@ body {
     margin-top: -10px;
     margin-right: 35px;
     background-color: inherit;
+    z-index: 11;
 }
 
 #company-logo {
@@ -99,9 +123,12 @@ a:link, a:visited {
 }
 
 #mission-content-container {
-    margin: 0px;
-    padding: 0px;
-    background-color: #F9FAFD;
+    margin-top: 35px;
+    padding: 25px;
+}
+
+h1 {
+    font-size: 4.5em;
 }
 
 button {

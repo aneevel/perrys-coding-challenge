@@ -23,7 +23,7 @@
                 <button id="get-started-now-button" class="mobile-only orange ">
                     Get Started Now
                 </button>
-                <button id="hamburger-menu" class="mobile-only mobile-nav-button black" onclick="openNavMenu()">
+                <button id="hamburger-menu" class="mobile-only mobile-nav-button black" onclick="toggleNavMenu()">
                     <i class="fa fa-bars"></i>
                 </button>
                 <ul id="primary-navigation">
@@ -122,5 +122,16 @@
             </div>
         </section>
     </div>
+
+    <script>
+        function toggleNavMenu() {
+            let navigation = document.getElementById("primary-navigation");
+            if (navigation.style.display === "flex") {
+                navigation.style.display = "none";
+            } else {
+                navigation.style.display = "flex";
+            }
+        }
+    </script>
 </body>
 </html>
