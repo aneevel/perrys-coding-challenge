@@ -271,6 +271,22 @@ button {
     margin: auto;
 }
 
+#image-container {
+    width: 100%;
+    height: 250px;
+    background: #5A7EFD;
+    overflow: hidden;
+}
+
+#image-holder {
+    width: 100%;
+    height: 100%;
+    background: url(images/header-image.png);
+    background-position: center;
+    background-size: cover;
+    mix-blend-mode: soft-light;
+}
+
 /**
 * 768px width sizing
 *
