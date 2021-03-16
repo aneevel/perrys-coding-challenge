@@ -309,8 +309,35 @@ button {
         display: none;
     }
 
+    #mission-text {
+        padding: 5%;
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+
     .nav-item {
         width: 100px;
+    }
+
+    .mission-header {
+        padding: 0px;
+    }
+
+    .header-button {
+        margin-left: 15%;
+        margin-right: 15%;
+        margin-bottom: 5%;
+        padding: 10px;
+    }
+
+    #image-container {
+        height: 500px;
+    }
+
+    #features-header {
+        padding: 0px;
+        padding-left: 20%;
+        padding-right: 20%;
     }
 }
 
