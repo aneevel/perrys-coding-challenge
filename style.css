@@ -33,6 +33,7 @@ body {
     align-items: center;
     width: 100%;
     height: 75px;
+    padding-top: 25px;
     padding-right: 25px;
     padding-left: 25px;
     margin-right: auto;
@@ -51,6 +52,10 @@ body {
     left: 0px;
     z-index: 10;
     display: none;
+}
+
+#hamburger-menu {
+    padding-top: 15px;
 }
 
 .mission-header {
@@ -88,7 +93,7 @@ body {
     justify-content: center;
     align-items: center;
     margin-left: 10px;
-    margin-top: 10px;
+    margin-top: 25px;
 }
 
 #company-logo-svg {
@@ -352,5 +357,59 @@ button {
 */
 
 @media screen and (min-width: 1024px) {
+
+    #mission-content-container {
+        width: 60%;
+    }
+
+    #mission-statement {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        margin-right: 5%;
+    }
+
+    #mission-text {
+        margin-left: 15px;
+        padding: 15px;
+        text-align: initial;
+        font-size: 1.3em;
+    }
+
+    .button-container {
+        margin-left: 15px;
+        width: 100%;
+        padding: 15px;
+        display: grid;
+        column-gap: 5px;
+        margin-top: 0px;
+        padding-top: 0px;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 1fr;
+    }
+
+    .header-button {
+        padding: 0px;
+        margin-left: 0px;
+        margin-right: 0px;
+        width: 50%;
+        height: 50px;
+    }
+
+    .mission-header {
+        font-weight: 700;
+        letter-spacing: -0.03em;
+        margin: 15px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        padding: 15px;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        text-align: left;
+    }
+    
+    #mission-statement:first-child {
+        color: #2B2F35;
+    }
 
 }
