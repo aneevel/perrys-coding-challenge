@@ -277,18 +277,11 @@ button {
 @media screen and (min-width: 768px) {
 
     #primary-nav-container {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width: 100%;
         height: 105px;
         padding-top: 15px;
         padding-bottom: 10px;
         padding-right: 50px;
         padding-left: 50px;
-        margin-right: auto;
-        margin-left: auto;
-        overflow: hidden;
     }
     
     #primary-navigation {
@@ -296,13 +289,14 @@ button {
         display: flex;
         flex-direction: row;
         justify-content: center;
+        margin-top: 30px;
         background: #F9FAFD;
         width: 100%;
     }
 
-    #company-logo-svg {
-        padding: 5px;
-        margin-top: 5px;
+    #company-logo {
+        margin: 0px;
+        padding: 0px;
     }
 
     #get-started-now-button, #hamburger-menu {
@@ -328,6 +322,12 @@ button {
         margin-right: 15%;
         margin-bottom: 5%;
         padding: 10px;
+        height: 75px;
+        width: 20%;
+    }
+
+    #download-button {
+        width: 20%;
     }
 
     #image-container {
@@ -338,6 +338,12 @@ button {
         padding: 0px;
         padding-left: 20%;
         padding-right: 20%;
+    }
+
+    #features {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
     }
 }
 
