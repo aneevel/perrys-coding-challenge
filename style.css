@@ -360,13 +360,13 @@ button {
 
     #mission-content-container {
         width: 60%;
+        padding: 5% 15% 10% 5%;
     }
 
     #mission-statement {
         display: flex;
         flex-direction: column;
         align-items: start;
-        margin-right: 5%;
     }
 
     #mission-text {
@@ -378,7 +378,7 @@ button {
 
     .button-container {
         margin-left: 15px;
-        width: 100%;
+        width: 60%;
         padding: 15px;
         display: grid;
         column-gap: 5px;
@@ -392,8 +392,12 @@ button {
         padding: 0px;
         margin-left: 0px;
         margin-right: 0px;
-        width: 50%;
+        width: 90%;
         height: 50px;
+    }
+
+    #download-button {
+        width: 90%;
     }
 
     .mission-header {
