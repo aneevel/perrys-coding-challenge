@@ -9,8 +9,8 @@
 }
 
 body {
-    background-color: #F9FAFD;
     height: 100%;
+    background-color: #FFFFFF;
     font-size: 15px;
     color: #535C68;
     font-family: 'Inter', sans-serif;
@@ -21,6 +21,12 @@ body {
 /**
 * Mobile/Small device and default rules
 */
+
+#page-container {
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+}
 
 #page-header {
     background-color: #F9FAFD;
@@ -146,7 +152,12 @@ a:link, a:visited {
 
 #mission-content-container {
     margin-top: 35px;
-    padding: 25px;
+    padding-top: 25px;
+    padding-bottom: 0px;
+}
+
+#mission-content {
+    margin-bottom: 50px;
 }
 
 #mission-text {
@@ -275,6 +286,10 @@ button {
     mix-blend-mode: soft-light;
 }
 
+h3 {
+    font-weight: 700;
+}
+
 /**
 * 768px width sizing
 */
@@ -360,25 +375,44 @@ button {
 @media screen and (min-width: 1024px) {
 
     #page-header {
+        margin: 0px;
+        padding: 0px;
         height: 50%;
     }
 
     #primary-nav-container {
+        position: absolute;
+        z-index: 100;
         background: transparent;
         justify-content: initial;
-        padding-right: 0px;
+        padding-right: 25px;
     }
 
     #primary-navigation {
+        z-index: 100;
         background: transparent;
+        padding: 0px;
+        margin: 0px;
         justify-content: initial;
-        width: 90%;
+    }
+
+    #company-logo {
+        margin-top: 25px;
     }
 
     #mission-content-container {
-        width: 60%;
-        height: 50%;
-        padding: 5% 15% 10% 5%;
+        display: grid;
+        grid-template-columns: 60% 40%;
+        padding-top: 0px;
+        margin-top: 0px;
+        width: 100%;
+        height: 500px;
+    }
+
+    #mission-content {
+        padding: 20px;
+        padding-top: 150px;
+        margin-bottom: 0px;
     }
 
     #mission-statement {
@@ -395,10 +429,11 @@ button {
     }
 
     #company {
-        margin-right: 40%;
+        margin-right: 35%;
     }
 
     #sign-in-link, #download-link {
+        width: 100px;
         color: #F9F9F9;
     }
 
@@ -443,15 +478,12 @@ button {
     }
 
     #image-container {
-        position: absolute;
-        width: 45%;
+        width: 100%;
         height: 100%;
-        top: 0px;
-        right: 0px;
     }
 
     #features-container {
-        height: 100%;
+        height: 600px;
     }
 
     #features-header {
@@ -478,5 +510,73 @@ button {
 
     .feature > h5 {
         text-align: initial;
+    }
+
+    .feature > p {
+        text-align: initial;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+
+    #features-container {
+        width: 100%;
+        height: 100%;
+    }
+
+    #features-header > h2 {
+        font-size: 1.2em;
+        padding-bottom: 0px;
+    }
+
+    #features-header > h3 {
+        font-size: 2.3em;
+    }
+
+    #features-header > h4 {
+        font-size: 1.2em;
+        padding-left: 12%;
+        padding-right: 12%;
+    }
+
+    #mission-text {
+        font-size: 1.5em;
+        padding-right: 20%;
+    }
+
+    #primary-nav-container {
+        padding-left: 5%;
+    }
+
+    #mission-content {
+        padding-left: 5%;
+    }
+
+    #company {
+        margin-right: 50%;
+    }
+
+    .button-container {
+        width: 45%;
+    }
+
+    .header-button {
+        width: 150px;
+        font-size: 1.2em;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    #download-button {
+        width: 150px;
+        height: 100%;
+    }
+
+    #features {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: 1fr 1fr;
+        padding-left: 5%;
+        padding-right: 5%;
     }
 }
