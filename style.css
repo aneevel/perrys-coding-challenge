@@ -10,6 +10,7 @@
 
 body {
     background-color: #F9FAFD;
+    height: 100%;
     font-size: 15px;
     color: #535C68;
     font-family: 'Inter', sans-serif;
@@ -22,7 +23,6 @@ body {
 */
 
 #page-header {
-    position: sticky;
     background-color: #F9FAFD;
     margin-bottom: 0px;
 }
@@ -301,6 +301,7 @@ button {
 
     #company-logo {
         margin: 0px;
+        margin-top: 45px;
         padding: 0px;
     }
 
@@ -358,8 +359,25 @@ button {
 
 @media screen and (min-width: 1024px) {
 
+    #page-header {
+        height: 50%;
+    }
+
+    #primary-nav-container {
+        background: transparent;
+        justify-content: initial;
+        padding-right: 0px;
+    }
+
+    #primary-navigation {
+        background: transparent;
+        justify-content: initial;
+        width: 90%;
+    }
+
     #mission-content-container {
         width: 60%;
+        height: 50%;
         padding: 5% 15% 10% 5%;
     }
 
@@ -374,6 +392,14 @@ button {
         padding: 15px;
         text-align: initial;
         font-size: 1.3em;
+    }
+
+    #company {
+        margin-right: 40%;
+    }
+
+    #sign-in-link, #download-link {
+        color: #F9F9F9;
     }
 
     .button-container {
@@ -403,10 +429,10 @@ button {
     .mission-header {
         font-weight: 700;
         letter-spacing: -0.03em;
-        margin: 15px;
+        margin-left: 15px;
         margin-top: 0px;
         margin-bottom: 0px;
-        padding: 15px;
+        padding-left: 15px;
         padding-top: 0px;
         padding-bottom: 0px;
         text-align: left;
@@ -416,4 +442,41 @@ button {
         color: #2B2F35;
     }
 
+    #image-container {
+        position: absolute;
+        width: 45%;
+        height: 100%;
+        top: 0px;
+        right: 0px;
+    }
+
+    #features-container {
+        height: 100%;
+    }
+
+    #features-header {
+        margin-top: 5%;
+    }
+
+    #features {
+        padding: 10px;
+    }
+
+    .feature {
+        display: block;
+        height: 100px;
+        margin: 25px;
+        padding: 25px;
+    }
+
+    .feature > .feature-svg {
+        height: auto;
+        padding-top: 15px;
+        padding-bottom: 25px;
+        float: left;
+    }
+
+    .feature > h5 {
+        text-align: initial;
+    }
 }
